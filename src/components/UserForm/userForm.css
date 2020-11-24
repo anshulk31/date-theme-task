@@ -1,0 +1,59 @@
+.Container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid #141f22 ;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+input {
+  width: 50%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+textarea {
+  height: 100px;
+  max-width: 50%;
+  resize: none;
+}
+
+button {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #a4a7a4;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.theme {
+    cursor:pointer;
+    background-color:#ec8600;
+    display:block;
+    text-align:center;
+    margin-top:8px;
+    width:90px;
+    height:31px;
+    border-radius:5px;
+    border-width:1px;
+    border-style:solid;
+    border-color:#0049e7;
+    margin-left: 40px;
+}
+
+.themeContainer {
+  display: flex;
+}
