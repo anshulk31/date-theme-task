@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
-import logo from './logo.svg';
-import UserForm from './components/UserForm/UserForm'
+import UserForm from './components/UserForm/index'
 import './App.css';
 
 class App extends Component {
@@ -9,7 +8,7 @@ class App extends Component {
     return (
       <div>
         <header className="header">Hello User !</header>
-        <div style={{ margin: 'auto', padding: 50 }}>
+        <div className="formContainer">
           <UserForm/>
         </div>  
       </div>

@@ -21,55 +21,52 @@ class UserForm extends Component {
 
   showUser = (e) => {
     e.preventDefault();
-    if(this.state.date !== '') {
+    if(this.state.date !== '' && this.state.message !== '' && this.state.theme !== '' ) {
       this.props.history.push({ 
         pathname: '/output',
         state: {
           date: this.state.date,
           message: this.state.message,
           theme: this.state.theme
-  
         }
        });
     }
   }
 
   render() {
-    const { date, message, theme } = this.state
+    const { date, message } = this.state
     return (
       <div className="Container">
         <form>
           <fieldset>
             <label>Select Date :</label>
-            <input name="date" value={date}  onChange={this.valueChangeHandler} type="date" style={{ marginLeft: 86}}/>
+            <input name="date" value={date}  onChange={this.valueChangeHandler} type="date"/>
           </fieldset>
           <fieldset>
             <label>Type in your message : </label> <br/>
-            <textarea name="message" value={message}  onChange={this.valueChangeHandler}  rows="4" cols="50" style={{ marginLeft: 168}}/>
+            <textarea name="message" value={message}  onChange={this.valueChangeHandler}  rows="4" cols="50" />
           </fieldset>
           <fieldset>
             <label>Select a theme for you : </label>
             <div className="themeContainer">
               <button 
-                className="theme" 
+                className="theme1" 
                 onClick={this.themeSelectHandler}
                 value="#ec8600"
               >Theme 1</button>
               <button 
-                className="theme" 
+                className="theme2" 
                 onClick={this.themeSelectHandler} 
-                style={{ backgroundColor: '#0049e7'}}
                 value="#0049e7"
               >Theme 2</button>
               <button 
-                className="theme" 
-                onClick={this.themeSelectHandler} 
-                style={{ backgroundColor: '#558000'}}
+                className="theme3" 
+                onClick={this.themeSelectHandler}
                 value="#558000"
               >Theme 3</button>
             </div>  
           </fieldset>
-          <button onClick={this.showUser}>Submit</button>
+          <button onClick={this.showUser}>Launch Output</button>
         </form>
       </div>
     )

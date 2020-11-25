@@ -10,22 +10,29 @@ fieldset {
   border: medium none !important;
   margin: 0 0 10px;
   min-width: 100%;
-  padding: 0;
   width: 100%;
 }
 
+label {
+  text-align: right;
+  clear: both;
+  margin-right:15px;
+}
+
 input {
-  width: 50%;
+  width: 57%;
   border: 1px solid #ccc;
   background: #FFF;
   margin: 0 0 5px;
   padding: 10px;
+  margin-left: 86px;
 }
 
 textarea {
   height: 100px;
-  max-width: 50%;
-  resize: none;
+  margin-left: 190px;
+  margin-top: -22px;
+  width: 60%;
 }
 
 button {
@@ -39,14 +46,24 @@ button {
   font-size: 15px;
 }
 
-.theme {
+button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+button:focus {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.theme1 {
     cursor:pointer;
     background-color:#ec8600;
     display:block;
     text-align:center;
     margin-top:8px;
     width:90px;
-    height:31px;
+    height: 50px;
     border-radius:5px;
     border-width:1px;
     border-style:solid;
@@ -54,6 +71,61 @@ button {
     margin-left: 40px;
 }
 
+.theme1:hover {
+  background-color:#d49561;
+}
+
+.theme1:focus{
+  border: 4px dotted black;
+}
+
+.theme2 {
+  cursor:pointer;
+  background-color:#0049e7;
+  display:block;
+  text-align:center;
+  margin-top:8px;
+  width:90px;
+  height: 50px;
+  border-radius:5px;
+  border-width:1px;
+  border-style:solid;
+  border-color:#0049e7;
+  margin-left: 40px;
+}
+
+.theme2:hover {
+  background-color:#4a7ff0;
+}
+
+.theme2:focus{
+  border: 4px dotted black;
+}
+
+.theme3 {
+  cursor:pointer;
+  background-color:#558000;
+  display:block;
+  text-align:center;
+  margin-top:8px;
+  width:90px;
+  height: 50px;
+  border-radius:5px;
+  border-width:1px;
+  border-style:solid;
+  border-color:#0049e7;
+  margin-left: 40px;
+}
+
+.theme3:hover {
+  background-color:#7bf74a;
+}
+
+.theme3:focus{
+  border: 4px dotted black;
+}
+
 .themeContainer {
   display: flex;
+  margin-left: 158px;
 }
